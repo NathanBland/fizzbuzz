@@ -7,4 +7,4 @@ const fizzbuzz = (max) => {
     console.log(str)
   }
 }
-fizzbuzz(100)
+fizzbuzz(parseInt(process.argv[2]) || 100)
