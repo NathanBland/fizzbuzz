@@ -1,15 +1,9 @@
-function fizzbuzz(max){
-  for (var i=1; i<max+1; i++){
-    var str = ''
-    if (i % 3 === 0){
-      str+= 'Fizz'
-    }
-    if (i % 5 === 0){
-      str+= 'Buzz'
-    }
-    if (str === ''){
-      str = i
-    }
+const fizzbuzz = (max) => {
+  for (let i = 1; i < max + 1; i++) {
+    let str = ''
+    i % 3 === 0 ? str += 'Fizz' : ''
+    i % 5 === 0 ? str += 'Buzz' : ''
+    str === '' ? str = i : ''
     console.log(str)
   }
 }
